@@ -30,10 +30,10 @@ hypothetical games.
 Biblioteka bazuj±ca na bibliotece rozgrywaj±cej grê w pokera Cliffa,
 napisanej w 1993 roku. Zosta³a kompletnie przepisana aby udostêpniæ
 lepsz± wydajno¶æ i umo¿liwiæ korzystanie z niej w wielu grach
-(w³±czajac gry z niestandardowymi uk³adami i zasadami), oraz zwiêkszyæ
+(w³±czaj±c gry z niestandardowymi uk³adami i zasadami), oraz zwiêkszyæ
 przeno¶no¶æ na wiêksz± liczbê platform. G³ównymi u¿ytkownikami tego
 pakietu s± programi¶ci - udostêpnia bogaty zestaw procedur do pisania
-programów o grze w pokera, w³±czajac w to teoretyczne rozdania.
+programów o grze w pokera, w³±czaj±c w to teoretyczne rozdania.
 
 %package devel
 Summary:	Headers for pokereval
