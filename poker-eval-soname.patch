@@ -1,0 +1,20 @@
+--- lib/Makefile.in~	2002-09-20 09:36:43.000000000 +0200
++++ lib/Makefile.in	2004-06-29 02:47:04.000000000 +0200
+@@ -1,5 +1,5 @@
+ LIBPOKER=libpoker@A@
+-SLIBPOKER=libpoker@SO@
++SLIBPOKER=libpoker@SO@.0
+ 
+ MKTABLE_HELPERS = mktable@O@ mktable_utils@O@
+ 
+--- configure.in~	2004-06-28 21:04:57.000000000 +0200
++++ configure.in	2004-06-29 02:45:59.000000000 +0200
+@@ -72,7 +72,7 @@
+   RUN_IT="./\$<"
+   LIB_CMD="\$(AR) cr \$@ \$^"
+   # hardcoding -shared in SLIB_CMD seems wrong (e.g., it is -G with solaris cc)
+-  SLIB_CMD="\$(CC) -shared -o \$@ \$^"
++  SLIB_CMD="\$(LD) -shared -soname \$@ -o \$@ \$^"
+   # more hardcoding...
+   SLIBJNI_CMD="\$(CC) -shared -L../lib -lpoker -o \$@ \$^"
+ 
