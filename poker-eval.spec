@@ -11,7 +11,6 @@ Source1:	poker-eval.pc
 Patch0:		%{name}-no_java.patch
 Patch1:		%{name}-no_msdos.patch
 URL:		http://pokersource.sourceforge.net
-BuildRequires:	SDL-devel
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
