@@ -69,12 +69,12 @@ Biblioteka Poker-eval do konsolidacji statycznej.
 %build
 cp -f /usr/share/automake/config.sub .
 %{__autoconf}
-
 %configure \
 	--disable-java
 
 %{__make} \
-	CFLAGS="%{rpmcflags}"
+	CFLAGS="%{rpmcflags} -fPIC" \
+	SLIB_CMD="%{__cc} -shared -Wl,-soname=\$@ -o \$@ \$^"
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -94,6 +94,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
+%doc README RELEASE TODO WHATS-HERE
 %attr(755,root,root) %{_libdir}/lib*.so.*
 
 %files devel
