@@ -10,6 +10,7 @@ Source0:	http://dl.sourceforge.net/pokersource/%{name}-src-%{version}.tar.gz
 Source1:	poker-eval.pc
 Patch0:		%{name}-no_java.patch
 Patch1:		%{name}-no_msdos.patch
+Patch2:		%{name}-soname.patch
 URL:		http://pokersource.sourceforge.net/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -63,6 +64,7 @@ Biblioteka Poker-eval do konsolidacji statycznej.
 %setup -q -n %{name}-src-%{version}
 %patch0 -p0
 %patch1 -p0
+%patch2 -p0
 
 %build
 cp -f /usr/share/automake/config.sub .
@@ -78,8 +80,7 @@ cp -f /usr/share/automake/config.sub .
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_libdir},%{_includedir}/%{name}/inlines,%{_pkgconfigdir}}
 install lib/libpoker.a $RPM_BUILD_ROOT%{_libdir}
-install lib/libpoker.so $RPM_BUILD_ROOT%{_libdir}/libpoker.so.0.0
-ln -sf libpoker.so.0.0 $RPM_BUILD_ROOT%{_libdir}/libpoker.so.0
+install lib/libpoker.so.* $RPM_BUILD_ROOT%{_libdir}
 ln -sf libpoker.so.0 $RPM_BUILD_ROOT%{_libdir}/libpoker.so
 install include/*.h $RPM_BUILD_ROOT%{_includedir}/%{name}
 install include/inlines/*.h $RPM_BUILD_ROOT%{_includedir}/%{name}/inlines
@@ -93,7 +94,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%attr(755,root,root) %{_libdir}/lib*.so.*.*
+%attr(755,root,root) %{_libdir}/lib*.so.*
 
 %files devel
 %defattr(644,root,root,755)
