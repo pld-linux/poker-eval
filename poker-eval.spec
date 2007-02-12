@@ -1,5 +1,5 @@
 Summary:	Poker Hand Evaluator Library
-Summary(pl):	Biblioteka do gry w pokera
+Summary(pl.UTF-8):   Biblioteka do gry w pokera
 Name:		poker-eval
 Version:	126.0
 Release:	1
@@ -22,38 +22,38 @@ primary audience for this package is programmers - it provides a rich
 framework for writing programs about poker games, including
 hypothetical games.
 
-%description -l pl
-Biblioteka bazuj±ca na bibliotece rozgrywaj±cej grê w pokera Cliffa,
-napisanej w 1993 roku. Zosta³a kompletnie przepisana aby udostêpniæ
-lepsz± wydajno¶æ i umo¿liwiæ korzystanie z niej w wielu grach
-(w³±czaj±c gry z niestandardowymi uk³adami i zasadami), oraz zwiêkszyæ
-przeno¶no¶æ na wiêksz± liczbê platform. G³ównymi u¿ytkownikami tego
-pakietu s± programi¶ci - udostêpnia bogaty zestaw procedur do pisania
-programów o grze w pokera, w³±czaj±c w to teoretyczne rozdania.
+%description -l pl.UTF-8
+Biblioteka bazujÄ…ca na bibliotece rozgrywajÄ…cej grÄ™ w pokera Cliffa,
+napisanej w 1993 roku. ZostaÅ‚a kompletnie przepisana aby udostÄ™pniÄ‡
+lepszÄ… wydajnoÅ›Ä‡ i umoÅ¼liwiÄ‡ korzystanie z niej w wielu grach
+(wÅ‚Ä…czajÄ…c gry z niestandardowymi ukÅ‚adami i zasadami), oraz zwiÄ™kszyÄ‡
+przenoÅ›noÅ›Ä‡ na wiÄ™kszÄ… liczbÄ™ platform. GÅ‚Ã³wnymi uÅ¼ytkownikami tego
+pakietu sÄ… programiÅ›ci - udostÄ™pnia bogaty zestaw procedur do pisania
+programÃ³w o grze w pokera, wÅ‚Ä…czajÄ…c w to teoretyczne rozdania.
 
 %package devel
 Summary:	Headers for pokereval
-Summary(pl):	Pliki nag³ówkowe do pokereval
+Summary(pl.UTF-8):   Pliki nagÅ‚Ã³wkowe do pokereval
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 
 %description devel
 Header files for pokereval programs.
 
-%description devel -l pl
-Pliki nag³ówkowe potrzebne przy budowaniu programów opartych na
+%description devel -l pl.UTF-8
+Pliki nagÅ‚Ã³wkowe potrzebne przy budowaniu programÃ³w opartych na
 pokereval.
 
 %package static
 Summary:	Poker-eval static library
-Summary(pl):	Statyczna biblioteka Poker-eval
+Summary(pl.UTF-8):   Statyczna biblioteka Poker-eval
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
 Poker-eval static library.
 
-%description static -l pl
+%description static -l pl.UTF-8
 Biblioteka Poker-eval do konsolidacji statycznej.
 
 %prep
