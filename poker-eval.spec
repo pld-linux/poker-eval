@@ -1,5 +1,5 @@
 Summary:	Poker Hand Evaluator Library
-Summary(pl.UTF-8):   Biblioteka do gry w pokera
+Summary(pl.UTF-8):	Biblioteka do gry w pokera
 Name:		poker-eval
 Version:	126.0
 Release:	1
@@ -33,7 +33,7 @@ programów o grze w pokera, włączając w to teoretyczne rozdania.
 
 %package devel
 Summary:	Headers for pokereval
-Summary(pl.UTF-8):   Pliki nagłówkowe do pokereval
+Summary(pl.UTF-8):	Pliki nagłówkowe do pokereval
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 
@@ -46,7 +46,7 @@ pokereval.
 
 %package static
 Summary:	Poker-eval static library
-Summary(pl.UTF-8):   Statyczna biblioteka Poker-eval
+Summary(pl.UTF-8):	Statyczna biblioteka Poker-eval
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
