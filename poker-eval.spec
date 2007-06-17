@@ -1,12 +1,12 @@
 Summary:	Poker Hand Evaluator Library
 Summary(pl.UTF-8):	Biblioteka do gry w pokera
 Name:		poker-eval
-Version:	126.0
+Version:	134.0
 Release:	1
 License:	GPL
 Group:		Libraries
-Source0:	http://download.gna.org/underware/dists/%{name}-%{version}.tar.gz
-# Source0-md5:	eae76bc3d4987748cf014a6b12599ea3
+Source0:	http://download.gna.org/pokersource/sources/%{name}-%{version}.tar.gz
+# Source0-md5:	aa6d39fd3b9025fb47f25009cde60d9b
 URL:		http://pokersource.sourceforge.net/
 BuildRequires:	autoconf
 BuildRequires:	automake
